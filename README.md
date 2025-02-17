@@ -1,60 +1,73 @@
-# Ayurvedic Medicine Search & Recommendation System
+# 🤖 Chatbot Version 1 - Trial
+🔗link -: https://shapayurveda-app.streamlit.app/
+Welcome to the **Chatbot Version 1 - Trial** for **Shap Organics Pvt. Ltd.** 🌿 This chatbot is built using **Streamlit** and employs the **RAG (Retrieval-Augmented Generation) technique** to suggest Ayurvedic ingredients based on user queries.
 
-This project is an Ayurvedic Medicine Search & Recommendation System built using Streamlit, LangChain, and the Google Gemini API. It allows users to search for Ayurvedic medicines based on their queries and provides recommendations based on similarity.
+## 🚀 Features
+- 📚 Uses **sample data** for ingredient recommendations.
+- 🔍 Fetches ingredient details from the **database**.
+- 💡 Provides information on **uses, dosage, and side effects**.
+- ⚡ Built using **Streamlit** for an interactive UI.
 
-## Project Structure
+## 📌 Sample Database
+The chatbot suggests Ayurvedic ingredients based on the following sample data:
 
+```json
+[
+    {
+        "name": "Ashwagandha",
+        "description": "A popular adaptogen known for its stress-relieving properties.",
+        "uses": ["Stress relief", "Anxiety reduction", "Improving stamina"],
+        "dosage": "500 mg to 1000 mg daily",
+        "side_effects": ["Nausea", "Diarrhea", "Stomach upset"]
+    },
+    {
+        "name": "Tulsi",
+        "description": "Also known as Holy Basil, it is revered for its medicinal properties.",
+        "uses": ["Boosting immunity", "Reducing inflammation", "Respiratory health"],
+        "dosage": "300 mg to 600 mg daily",
+        "side_effects": ["Low blood sugar", "Nausea", "Diarrhea"]
+    },
+    {
+        "name": "Turmeric",
+        "description": "A spice known for its anti-inflammatory and antioxidant properties.",
+        "uses": ["Joint pain relief", "Digestive health", "Skin health"],
+        "dosage": "500 mg to 2000 mg daily",
+        "side_effects": ["Stomach upset", "Nausea", "Diarrhea"]
+    },
+    {
+        "name": "Ginger",
+        "description": "A common spice with a long history of use for digestive issues.",
+        "uses": ["Nausea relief", "Digestive aid", "Anti-inflammatory"],
+        "dosage": "500 mg to 1000 mg daily",
+        "side_effects": ["Heartburn", "Diarrhea", "Mouth irritation"]
+    },
+    {
+        "name": "Neem",
+        "description": "Known for its antibacterial and antifungal properties.",
+        "uses": ["Skin health", "Blood sugar control", "Detoxification"],
+        "dosage": "400 mg to 600 mg daily",
+        "side_effects": ["Nausea", "Diarrhea", "Stomach upset"]
+    }
+]
 ```
-ayurvedic-medicine-app/
-├── app.py                     # Main Streamlit application file
-├── data/
-│   └── medicines.json         # Raw data of Ayurvedic medicines
-├── embeddings/
-│   ├── medicine_embeddings.py  # Script to generate and save embeddings
-│   └── saved_embeddings/
-│       └── medicine_embeddings.json  # Stored embeddings for similarity search
-├── models/
-│   └── embedding_model.py      # Logic for generating embeddings using Gemini API
-├── utils/
-│   └── similarity_search.py     # Script for performing similarity searches
-├── requirements.txt            # List of project dependencies
-└── README.md                   # Project documentation
-```
 
-## Setup Instructions
+## 🛠️ Tech Stack
+- **Python** 🐍
+- **Streamlit** 🎈
+- **RAG (Retrieval-Augmented Generation)** 📖
+- **JSON-based Sample Database** 📂
 
-1. **Install Dependencies**: Ensure you have Python 3.8 or higher. Install the necessary packages by running:
-   ```
-   pip install streamlit langchain google-generativeai
-   ```
+## 🎯 How It Works
+1. Users enter their **query**.
+2. The chatbot retrieves relevant **ingredient data** from the sample database.
+3. The chatbot **suggests ingredients** along with their description, usage, dosage, and side effects.
 
-2. **Obtain API Key**: Acquire a Google API key for accessing the Gemini models from the Google AI platform.
+## 📌 Future Improvements
+- ✅ Integration with a **real database**.
+- ✅ Enhanced **AI-powered recommendations**.
+- ✅ More **ingredients and expanded dataset**.
 
-3. **Set Up Environment Variables**: Create a `.env` file in your project directory and add your Google API key:
-   ```
-   GOOGLE_API_KEY=your_google_api_key_here
-   ```
+---
 
-## Running the Application
+🔗 **Developed by Shap Organics Pvt. Ltd.** 🌱
 
-1. **Generate Embeddings**: Run the `medicine_embeddings.py` script to process the raw data and generate embeddings:
-   ```
-   python embeddings/medicine_embeddings.py
-   ```
-
-2. **Start Streamlit App**: Launch the Streamlit application:
-   ```
-   streamlit run app.py
-   ```
-
-## Usage
-
-- Navigate to the Streamlit app in your browser.
-- Enter a query related to Ayurvedic medicines.
-- The system will process your query, perform a similarity search, and display the most relevant medicine recommendations.
-
-## Additional Resources
-
-- For a comprehensive guide on integrating LangChain with Google's Gemini API, refer to the quickstart guide.
-- To understand how to create a Google Gemini chatbot with minimal code, see the tutorial.
-- For a visual walkthrough on integrating Gemini with LangChain, you might find the video tutorial helpful.
