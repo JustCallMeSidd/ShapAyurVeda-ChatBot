@@ -71,4 +71,5 @@ The chatbot suggests Ayurvedic ingredients based on the following sample data:
 ---
 
 🔗 **Developed for Shap Organics Pvt. Ltd.** 🌱
+
 🔗 **Developed by justcallmesidd** 🌱
