@@ -1,6 +1,7 @@
 import os
 import json
 import numpy as np
+pip install langchain_google_genai
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from dotenv import load_dotenv
 
