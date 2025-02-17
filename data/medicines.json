@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Ashwagandha",
+        "description": "A popular adaptogen known for its stress-relieving properties.",
+        "uses": ["Stress relief", "Anxiety reduction", "Improving stamina"],
+        "dosage": "500 mg to 1000 mg daily",
+        "side_effects": ["Nausea", "Diarrhea", "Stomach upset"]
+    },
+    {
+        "name": "Tulsi",
+        "description": "Also known as Holy Basil, it is revered for its medicinal properties.",
+        "uses": ["Boosting immunity", "Reducing inflammation", "Respiratory health"],
+        "dosage": "300 mg to 600 mg daily",
+        "side_effects": ["Low blood sugar", "Nausea", "Diarrhea"]
+    },
+    {
+        "name": "Turmeric",
+        "description": "A spice known for its anti-inflammatory and antioxidant properties.",
+        "uses": ["Joint pain relief", "Digestive health", "Skin health"],
+        "dosage": "500 mg to 2000 mg daily",
+        "side_effects": ["Stomach upset", "Nausea", "Diarrhea"]
+    },
+    {
+        "name": "Ginger",
+        "description": "A common spice with a long history of use for digestive issues.",
+        "uses": ["Nausea relief", "Digestive aid", "Anti-inflammatory"],
+        "dosage": "500 mg to 1000 mg daily",
+        "side_effects": ["Heartburn", "Diarrhea", "Mouth irritation"]
+    },
+    {
+        "name": "Neem",
+        "description": "Known for its antibacterial and antifungal properties.",
+        "uses": ["Skin health", "Blood sugar control", "Detoxification"],
+        "dosage": "400 mg to 600 mg daily",
+        "side_effects": ["Nausea", "Diarrhea", "Stomach upset"]
+    }
+]
