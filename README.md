@@ -1,5 +1,5 @@
 # 🤖 Chatbot Version 1 - Trial
-🔗link -: https://shapayurveda-app.streamlit.app/
+🔗link -: [https://shapayurveda-app.streamlit.app/](https://shapayurveda-app.streamlit.app/)
 
 Welcome to the **Chatbot Version 1 - Trial** for **Shap Organics Pvt. Ltd.** 🌿 This chatbot is built using **Streamlit** and employs the **RAG (Retrieval-Augmented Generation) technique** to suggest Ayurvedic ingredients based on user queries.
 
