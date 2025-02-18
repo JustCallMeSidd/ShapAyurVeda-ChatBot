@@ -14,7 +14,7 @@ model = genai.GenerativeModel('gemini-pro')
 def generate_explanation(user_query, medicine_data):
     """Generate natural language explanation using Gemini"""
     prompt = f"""
-    Explain why this Ayurvedic medicine might be suitable for the user's query. 
+    Explain/tell why this Ayurvedic medicine might be suitable for the user's query. 
     Consider the following details:
 
     User Query: {user_query}
